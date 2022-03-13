@@ -1,0 +1,32 @@
+.parallax-section {
+  background: url("../images/welcome/computer-neon.jpg") no-repeat center /
+    cover fixed;
+  height: 700px;
+}
+nav a {
+  display: inline-block;
+  margin-left: 20px;
+  font-weight: 400;
+  padding-bottom: 8px;
+  border-bottom: 3px solid transparent;
+  text-decoration: none;
+  color: black;
+}
+nav a:hover {
+  border-color: black;
+  color: black;
+}
+
+nav a.active {
+  border-color: black;
+}
+
+.card {
+  box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+  border-radius: 0;
+  border: 0;
+  transition: transform 0.4s ease;
+}
+.card:hover {
+  transform: scale(1.1);
+}
