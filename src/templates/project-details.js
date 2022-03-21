@@ -1,57 +1,47 @@
 import React from "react";
 import Layout from "../components/Layout.js";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { graphql } from "gatsby";
 
-const projectDetails = ({ data }) => {
-  const { html } = data.allMarkdownRemark;
-  const { titleProject, bannerImg } = data.allMarkdownRemark.frontmatter;
+const projectsDetails = ({ data }) => {
+  console.log(data);
+
+  const { html } = data.markdownRemark;
+  const { titleProject, bannerImg } = data.markdownRemark.frontmatter;
   return (
     <Layout>
       <div>
-        <h2>{titleProject}</h2>
         <div>
           <GatsbyImage
             image={getImage(bannerImg.childImageSharp.gatsbyImageData)}
             alt="banner"
           />
         </div>
-        <div dangerouslySetInnerHTML={{ __html: html }}></div>
+        <h2 className="text-center display-4 mt-5 mb-md-5 mb-3">
+          {titleProject}
+        </h2>
+        <div
+          className="container"
+          dangerouslySetInnerHTML={{ __html: html }}
+        ></div>
       </div>
     </Layout>
   );
 };
 
-export default projectDetails;
-
-// export const query = graphql`
-//     query ProjectsPage($slug: String) {
-//         markdownRemark(frontmatter: {slug: {eq: $slug}}) {
-//             html
-//             frontmatter {
-//                 titleProject
-//                 bannerImg {
-//                     childImageSharp {
-//                         gatsbyImageData
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// `;
+export default projectsDetails;
 export const query = graphql`
-  query MyQuery {
-    allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/projectsDone/" } }
+  query MesBurnes($slug: String) {
+    markdownRemark(
+      frontmatter: { slug: { eq: $slug } }
+      fileAbsolutePath: { regex: "/projectsDone/" }
     ) {
-      nodes {
-        
-        frontmatter {
-          slug
-          titleProject
-          bannerImg {
-            childImageSharp {
-              gatsbyImageData
-            }
+      html
+      frontmatter {
+        titleProject
+        bannerImg {
+          childImageSharp {
+            gatsbyImageData
           }
         }
       }

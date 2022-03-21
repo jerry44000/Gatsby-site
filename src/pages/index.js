@@ -15,21 +15,21 @@ export default function Home({ data }) {
       <div id="home" className="w-100 h-100 position-relative">
         <div className="parallax-section d-flex justify-content-center align-items-center">
           <div className="position-relative w-100 h-100 d-flex align-items-center justify-content-center flex-column pb-5">
-            <p className="fs-5 text-light mb-0 mt-5">The future is now</p>
+            <p className="fs-5 text-light mb-0 mt-5">Lorem ipsum dolor sit.</p>
             <h1 className="text-center display-1 fw-bolder text-light">
-              The Best Hosting For You
+              Lorem ipsum dolor sit amet.
             </h1>
-            <p className="fs-5 text-light mb-4">Secure and reliable</p>
+            <p className="fs-5 text-light mb-4">Lorem, ipsum dolor.</p>
             <Button variant="primary">See more</Button>
           </div>
         </div>
       </div>
       <section className="container pt-5">
         <p className="fs-5 text-dark mb-0 mt-md-5 mt-4 text-center">
-          You can lean on us
+          Lorem ipsum dolor sit amet.
         </p>
         <h2 className="text-center display-4 mb-md-5 mb-3">
-          Our servers are robust
+          Lorem ipsum dolor sit.
         </h2>
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center pt-4 pb-5 mt-0 mt-md-5">
           {feats.map((feat) => (
@@ -77,7 +77,7 @@ export default function Home({ data }) {
                       {project.frontmatter.projectDescription}
                     </p>
                     <Link
-                      to={"/" + project.frontmatter.slug}
+                      to={"/projectsDone/" + project.frontmatter.slug}
                       key={project.id}
                     >
                       <Button>Take a look at it</Button>
