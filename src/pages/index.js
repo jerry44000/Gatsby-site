@@ -3,6 +3,7 @@ import { graphql, Link } from "gatsby";
 import { Button } from "react-bootstrap";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout.js";
+import SEO from '../components/Seo';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/global.css";
 
@@ -12,6 +13,7 @@ export default function Home({ data }) {
   const projects = data.projects.nodes;
   return (
     <Layout>
+      <SEO title="Home"/>
       <div id="home" className="w-100 h-100 position-relative">
         <div className="parallax-section d-flex justify-content-center align-items-center">
           <div className="position-relative w-100 h-100 d-flex align-items-center justify-content-center flex-column pb-5">

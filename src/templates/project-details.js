@@ -5,7 +5,6 @@ import { graphql } from "gatsby";
 
 const projectsDetails = ({ data }) => {
   console.log(data);
-
   const { html } = data.markdownRemark;
   const { titleProject, bannerImg } = data.markdownRemark.frontmatter;
   return (
