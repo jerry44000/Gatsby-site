@@ -1,5 +1,5 @@
 ---
-titleProject: Retro
+titleProject: Retro Landing Page
 slug: retro
 thumb: ../images/thumbs/gaming.png
 bannerImg: ../images/banner/gaming-banner.png

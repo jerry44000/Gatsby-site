@@ -1,5 +1,5 @@
 ---
-titleProject: Hosting
+titleProject: Hosting Landing Page
 slug: hosting
 thumb: ../images/thumbs/coffee.png
 bannerImg: ../images/banner/coffee-banner.png

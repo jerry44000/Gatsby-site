@@ -1,5 +1,5 @@
 ---
-titleProject: Work 3
+titleProject: Music Blog
 slug: work3
 thumb: ../images/thumbs/drums.png
 bannerImg: ../images/banner/drums-banner.png

@@ -1,5 +1,5 @@
 ---
-titleProject: Work 4
+titleProject: Restaurant Landing Page
 slug: work4
 thumb: ../images/thumbs/food.png
 bannerImg: ../images/banner/food-banner.png

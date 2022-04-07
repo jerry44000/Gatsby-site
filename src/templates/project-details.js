@@ -1,14 +1,14 @@
 import React from "react";
-import Layout from "../components/Layout.js";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { graphql } from "gatsby";
+import LayoutDetails from "../components/LayoutDetails.js";
 
 const projectsDetails = ({ data }) => {
   console.log(data);
   const { html } = data.markdownRemark;
   const { titleProject, bannerImg } = data.markdownRemark.frontmatter;
   return (
-    <Layout>
+    <LayoutDetails>
       <div>
         <div>
           <GatsbyImage
@@ -24,7 +24,7 @@ const projectsDetails = ({ data }) => {
           dangerouslySetInnerHTML={{ __html: html }}
         ></div>
       </div>
-    </Layout>
+    </LayoutDetails>
   );
 };
 

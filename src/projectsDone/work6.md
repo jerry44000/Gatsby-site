@@ -1,5 +1,5 @@
 ---
-titleProject: Work 6
+titleProject: Skate Blog
 slug: work6
 thumb: ../images/thumbs/skate.png
 bannerImg: ../images/banner/skate-banner.png

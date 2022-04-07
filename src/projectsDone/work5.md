@@ -1,5 +1,5 @@
 ---
-titleProject: Work 5
+titleProject: E-commerce
 slug: work5
 thumb: ../images/thumbs/shoes.png
 bannerImg: ../images/banner/shoes-banner.png
